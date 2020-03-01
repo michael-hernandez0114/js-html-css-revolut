@@ -4,68 +4,52 @@
     box-sizing: border-box;
 }
 
+header {
+    height: 80px;
+}
+
 .container {
-    height: 100vh;
+    height: 100%;
+    max-width: 1200px;
+    background-color: green;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.header-left {
+    height: 100%;
+    width: 20%;
+    float: left;
+    background-color: red;
+}
+
+.header-right {
+    height: 100%;
+    width: 70%;
+    float: right;
+    background-color: blue;
+
+}
+
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-.faq-toggle {
-    width: 500px;
+.menu-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-p {
+.dropdown-menu {
     display: none;
 }
-
-.question {
-    padding: 10px 0;
-    border-top: 1px solid lightgray;
-    cursor: pointer;
-}
-
-.question:last-child {
-    border-bottom: 1px solid lightgray;
-}
-
-.question h3 {
-    font-family: sans-serif;
-    font-weight: 200;
-    text-transform: uppercase;
-    color: lightgray;
-}
-
-.question p {
-    padding: 10px 0;
-    color: lightgray;
-}
-
-.question h3::after {
-    font-family: "Font Awesome 5 Free";
-    content: '\f107';
-    font-weight: 900;
-    float: right;
-    transition: transform 0.5s;
-}
-
-.question h3.ruota::after {
-    transform: rotate(180deg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  */
